@@ -209,7 +209,7 @@ h1, h2, p, .iconContainer img, button{
   }
   .contentContainer {
     flex-direction: column;
-    height: auto;
+    min-height: 100vh;
   }
   #homeSection{
     min-height: 100vh;
@@ -278,6 +278,7 @@ h1, h2, p, .iconContainer img, button{
   }
 
 }
+
 
 
 
