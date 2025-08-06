@@ -205,16 +205,17 @@ h1, h2, p, .iconContainer img, button{
   .div{
     height: auto;
     padding: 2rem;
+    min-height: 100vh;
   }
   .contentContainer {
     flex-direction: column;
-     min-hight: 100vh;
-  }
-   main{
-         min-hight: 100vh;
+    height: auto;
   }
   #homeSection{
-      min-hight: 100vh;
+    min-height: 100vh;
+  }
+  main{
+    min-height: 100vh;
   }
   .nav {
     display: flex;
@@ -240,7 +241,6 @@ h1, h2, p, .iconContainer img, button{
   .content{
     padding: 0;
     animation: none;
-       min-hight: 100vh;
   }
   .navContainer{
     padding: 0.9rem;
@@ -276,7 +276,9 @@ h1, h2, p, .iconContainer img, button{
     padding: 0.5rem;
     margin-left: 1rem;
   }
+  #homeSection{
+    height: auto;
+  }
 }
-
 
 
