@@ -210,6 +210,9 @@ h1, h2, p, .iconContainer img, button{
     flex-direction: column;
     height: auto;
   }
+  #homeSection{
+      height: auto
+  }
   .nav {
     display: flex;
     flex-direction: column;
@@ -270,4 +273,5 @@ h1, h2, p, .iconContainer img, button{
     margin-left: 1rem;
   }
 }
+
 
