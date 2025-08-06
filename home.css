@@ -208,6 +208,7 @@ h1, h2, p, .iconContainer img, button{
   }
   .contentContainer {
     flex-direction: column;
+    height: auto;
   }
   .nav {
     display: flex;
@@ -269,3 +270,4 @@ h1, h2, p, .iconContainer img, button{
     margin-left: 1rem;
   }
 }
+
