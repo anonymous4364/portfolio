@@ -1,0 +1,96 @@
+#aboutSection {
+  padding-top: 4rem; 
+  height: 100vh;
+}
+
+.aboutContainer {
+  background-color: #1a252f;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutBoxContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  column-gap: 2rem;
+}
+
+.aboutContainer header {
+  width: 100%;       
+  padding-top: 3rem; 
+  text-align: center;
+}
+
+.aboutContainer header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.aboutContainer header h1 span {
+  color: #00c4ff;
+}
+
+.aboutBox {
+  background-color: hsl(194, 100%, 10%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 40%;
+}
+
+.aboutBox:nth-child(odd) {
+  background-color: hsl(194, 100%, 25%);
+  transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.aboutBox:nth-child(odd):hover {
+  background-color: #1a252f;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00c4ff;
+}
+
+.aboutBox:nth-child(even) {
+  background-color: #1a252f;
+  border: 1px solid #00c4ff;
+  transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.aboutBox:nth-child(even):hover {
+  background-color: #00c4ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00c4ff;
+}
+
+.aboutBox h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.aboutBox p {
+  font-size: smaller;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutBox {
+    height: 10rem;
+    overflow: auto;
+    background-color: #00c4ff;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}

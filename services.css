@@ -1,0 +1,97 @@
+#servicesSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #1a252f; 
+}
+
+.servicesSection h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 3rem;
+}
+
+.servicesSection .boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.servicesSection .box {
+  border: 1px solid #00c4ff; 
+  border-radius: 1rem;
+  width: 27%;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.servicesSection .box:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px #00c4ff, -5px -5px 10px #00c4ff;
+}
+
+.servicesSection .box:nth-child(odd) {
+  background-color: hsl(194, 100%, 25%);
+}
+
+.servicesSection .box:nth-child(odd) p {
+  color: #ffffff;
+}
+
+.servicesSection .box:nth-child(even) p {
+  color: #b3c7d1;
+}
+
+.servicesSection h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  #servicesSection {
+    height: auto;
+  }
+
+  .servicesSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .boxContainer {
+    flex-direction: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .servicesSection .box {
+    width: 45%;
+    height: 10rem;
+    overflow: auto;
+  }
+
+  .servicesSection h1 {
+    font-size: 2rem;
+  }
+
+  .servicesSection h3 {
+    font-size: 1.25rem;
+  }
+
+  .servicesSection .box p {
+    font-size: 1rem;
+  }
+
+  .servicesSection .box p, h3 {
+    font-size: smaller;
+  }
+
+  .servicesSection h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+}

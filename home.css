@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: #19222b;
+}
+.div{
+  background: linear-gradient(90deg, #0080b3, #161e26);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8rem;
+    margin-bottom: 0rem;
+    animation-name: slideDownNav;
+    animation-duration: 0.9s;
+}
+#homeSection{
+  height: 92.5vh;
+  width: 92.5vw;
+  background-color: hsl(209, 29%, 11%);
+  border-radius: 2rem;
+}
+.contentContainer{
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    padding: 2.25rem;
+    animation-name: slideDown, fadeIn;
+    animation-duration: 0.9s, 1.35s;
+    animation-fill-mode: forwards;
+}
+.imgContainer img {
+    width: 22.5rem;
+    height: 25rem;
+    border-radius: 4500px;
+    filter: contrast(1.1);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    box-shadow: 4.5px 4.5px 9px #00c4ff;
+}
+.imgContainer img:hover {
+    transform: scale(1.1);
+    box-shadow: -4.5px -4.5px 9px #00c4ff;
+}
+.imgWrapper {
+    animation-name: slideLeft, fadeIn;
+    animation-duration: 0.9s, 1.35s;
+    animation-fill-mode: forwards;
+}
+.content{
+    padding: 1.35rem;
+    animation-name: slideDown;
+    animation-duration: 0.9s;
+}
+.iconContainer img {
+    width: 2.43rem;
+    height: 2.43rem;
+    border-radius: 4500px;
+    border: solid #00c4ff 1px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    cursor: pointer;
+    margin-top: 0.9rem;
+}
+.iconContainer img:hover{
+    transform: scale(1.35);
+    box-shadow: 2.7px 2.7px 4.5px #00c4ff;
+}
+.iconContainer{
+    display: flex;
+    gap: 0.9rem;
+}
+#name, .nav button{
+    color: #ffffff;
+    font-size: 1.35rem;
+    padding: 0.675rem 1.125rem;
+    font-weight: bold;
+    transition: background-color, padding 0.45s, box-shadow 0.45s ease;
+    cursor: pointer;
+    border-radius: 0.9rem 1.8rem;
+    background-color: #1a252f;
+    border-color: #00c4ff;
+    animation-name: fadeIn;
+    animation-duration: 1.35s;
+    animation-fill-mode: forwards;
+}
+#name{
+    background-color: #00c4ff;
+    font-size: 2.5rem;
+    cursor: none;
+    display: flex;
+    align-items: center;
+    padding: 0.675rem 2.7rem;
+}
+.nav button:hover{
+    background-color: #00c4ff;
+    padding: 0.9rem 1.35rem;
+    box-shadow: 2.7px 2.7px 4.5px #00c4ff;
+}
+h1{
+    color: #ffffff;
+    font-size: 3.15rem;
+}
+h1 span{
+    color: #00c4ff;
+}
+h2{
+    color: #00c4ff;
+    font-size: 2.25rem;
+}
+p{
+    color: #b3c7d1;
+    font-weight: normal;
+}
+.colon{
+    color: #ffffff;
+    animation-name: live;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+.Hire, .CV{
+    color: #ffffff;
+    padding: 0.9rem 1.8rem;
+    border: solid #00c4ff;
+    background-color: #1a252f;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+}
+.CV{
+    background-color: #00c4ff;
+    transition: background-color, padding 0.45s ease;
+    animation-name: backgroundColor;
+    animation-iteration-count: infinite;
+    animation-duration: 0.9s;
+}
+.CV:hover{
+    background-color: #1a252f;
+    padding: 1.125rem 2.25rem;
+}
+.Hire{
+    transition: background-color, padding 0.45s ease;
+}
+.Hire:hover{
+    background-color: #00c4ff;
+    padding: 1.125rem 2.25rem;
+}
+h1, h2, p, .iconContainer img, button{
+    margin-bottom: 0.9rem;
+}
+.mobileNav{
+    display: none;
+}
+.mobileNav select{
+    color: #ffffff;
+    background-color: #00c4ff;
+    padding: 0.45rem 0.225rem;
+    font-size: 1.8rem;
+    border-radius: 0.9rem 1.8rem;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 1.35s;
+    animation-fill-mode: forwards;
+}
+.mobileNav option{
+    font-size: 0.9rem;
+}
+@keyframes slideDownNav{
+    from{transform: translateY(-76.5%);}
+}
+@keyframes slideDown{
+    from{transform: translateY(-22.5%);}
+}
+@keyframes slideLeft{
+    from{transform: translateX(45%);}
+}
+@keyframes live{
+    100%{opacity: 0;}
+    50%{opacity: 1;}
+    0%{opacity: 0;}
+}
+@keyframes backgroundColor{
+    0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #00c4ff;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media screen and (max-width: 600px) {
+  .div{
+    height: auto;
+    padding: 2rem;
+  }
+  .contentContainer {
+    flex-direction: column;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #name, .nav a{
+    padding: 0.45rem 0.45rem;
+    font-size: larger;
+  }
+  .nav a{
+    display: none;
+  }
+  .nav button{
+    display: none;
+  }
+  #name{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2.25rem;
+    font-size: 1.5rem;
+  }
+  .content{
+    padding: 0;
+    animation: none;
+  }
+  .navContainer{
+    padding: 0.9rem;
+    animation: none;
+  }
+  .imgContainer img{
+    margin-top: 1.8rem;
+    width: 100%;
+  }
+  button{
+    font-size: 0.9rem;
+  }
+  .iconContainer img{
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .imgContainer img{
+    display: none;
+  }
+  .contentContainer{
+    padding-top: 0;
+  }
+  .content H1{
+    font-size: 2.8rem;
+  }
+  .content H2{
+    font-size: 2rem;
+  }
+  .mobileNav{
+    display: block;
+  }
+  .mobileNav select{
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+.contacts {
+  padding: 2.7rem;
+}
+
+.contactsbutton {
+  color: #ffffff;
+  padding: 0.9rem 1.8rem;
+  border: solid #00c4ff;
+  background-color: #1a252f;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  transition: background-color 0.45s ease, padding 0.45s ease;
+}
+
+.contactsbutton:hover {
+  background-color: #00c4ff;
+  padding: 1.125rem 40vw;
+}
+
+.contactsButtonDiv {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contactsbutton:hover {
+    padding: 0.9rem;
+  }
+
+  #contactP {
+    padding: 2.7rem;
+    text-align: center;
+  }
+}
