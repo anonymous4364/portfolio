@@ -12,6 +12,7 @@
   margin-top: 0.9rem;
   font-size: 0.9rem;
   transition: background-color 0.45s ease, padding 0.45s ease;
+  display: none;
 }
 
 .contactsbutton:hover {
@@ -34,3 +35,4 @@
     text-align: center;
   }
 }
+
